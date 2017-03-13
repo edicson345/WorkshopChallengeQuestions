@@ -1,3 +1,12 @@
+/*
+Here I attempted to create two solutions. The first was to create a HashSet of the Strings in the first array. The HashSet could 
+probably be made from either array as the solution has to be a subset of the arrays. The idea behind using a Set was to produce a unique
+set of Strings that are common between the two array. The running time of the first solution would be O(n). The second solution was made 
+with the restriction that less memory needed to be used. The idea was to sort the two arrays which immediately put the running time at 
+O(nlogn). With the arrays sorted a String from array1 could be used in a binary search to locate a matching String in array2 and then 
+could be added to the array of common Strings to be returned. Ideally the second solution would work best under the condition that there
+are no duplicate strings and the arrays are already sorted.
+*/
 
 import java.util.Arrays;
 import java.util.*;
